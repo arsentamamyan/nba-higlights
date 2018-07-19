@@ -1,0 +1,375 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #1b1b1b;
+}
+
+.flexbox-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Fjalla One';
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+/*====================================
+            HEADER FOOTER
+====================================*/
+header {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+header, footer {
+    background: #fff;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Fjalla One';
+}
+
+header .logo,
+footer .logo {
+    flex-grow: 1;
+    height: 22px;
+}
+
+header .logo span,
+footer .logo span {
+    background: url('../images/logo.png') no-repeat;
+    display: inline-block;
+    width: 58px;
+    height: 24px;
+}
+
+footer {
+    background: #1f1f1f;
+    margin-top: 30px;
+}
+
+/*====================================
+                SLIDER
+====================================*/
+
+.item-slider {
+    height: 700px;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+    font-family: 'Fjalla One';
+}
+
+.item-slider .caption {
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+    text-align: right;
+    width: 320px;
+    text-transform: uppercase;
+}
+
+.item-slider h4 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.item-slider .caption p {
+    font-size: 70px;
+    margin-top: 0;
+}
+
+/*====================================
+                SUBSCRIBERS
+====================================*/
+.subscribe-panel {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.subscribe-panel h3 {
+    font-family: 'Fjalla One';
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.subscribe-panel input {
+    border-radius: 20px;
+    border: 3px solid #dddddd;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.subscribe-panel input:focus {
+    outline-width: 0;
+}
+
+.subscribe-panel small {
+    font-size: 10px;
+    line-height: 0px;
+}
+
+.subscribe-panel .error{
+    display: none;
+    color: #f44336;
+}
+
+.subscribe-panel .success{
+    display: none;
+    color: #4caf50;
+}
+
+.subscribe-panel .error.show,
+.subscribe-panel .success.show {
+    display: block;
+}
+
+/*====================================
+                BLOCKS
+====================================*/
+
+.home-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.home-blocks .item {
+    flex-grow: 1;
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+}
+
+.home-blocks .item.lg {
+    width: 50%;
+}
+
+.home-blocks .item.md {
+    width: 30%;
+}
+
+.home-blocks .item.sm {
+    width: 20%;
+}
+
+.home-blocks .item .image {
+    height: 270px;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.home-blocks .item .title {
+    background: black;
+    padding: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.home-blocks .item:hover .title {
+    transform: translate(0px, -39px);
+    transition: all 500ms ease-in-out;
+}
+
+.home-blocks .item .title a {
+    color: #fff;
+}
+
+.home-blocks .item.lg {
+    animation-delay: 200ms;
+    -webkit-animation-delay: 200ms !important;
+}
+
+.home-blocks .item.md {
+    -webkit-animation-delay: 500ms !important;
+}
+
+.home-blocks .item.sm {
+    animation-delay: 800ms;
+    -webkit-animation-delay: 800ms !important;
+}
+
+.home-blocks .item .veil {
+    background: #000000;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    transition: all 500ms ease-in-out;
+}
+
+.home-blocks .item:hover .veil {
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+/*====================================
+                POLL
+====================================*/
+
+.home-poll {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.poll-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.poll-container .poll-item {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.poll-container .poll-item img {
+    width: 80%;
+}
+
+.poll-container .poll-item div {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+}
+
+/*====================================
+                FADE
+====================================*/
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+/*====================================
+                TEAMS
+====================================*/
+.teams-component {
+    min-height: 800px;
+}
+
+.teams-input {
+    text-align: center;
+    padding: 20px 0;
+    background: #e6e6e6;
+}
+
+.teams-input input {
+    font-family: 'Roboto';
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.teams-input input:focus {
+    outline: none;
+}
+
+.teams-container .wrapper {
+    width: 25%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.teams-container .team-item img {
+    width: 100%;
+}
+
+/*====================================
+                TEAM
+====================================*/
+
+.team-data-wrapper {
+    display: flex;
+}
+
+.team-data-wrapper .left {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.team-data-wrapper .right {
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-left: 1px solid #b9b9b9;
+    padding: 0px 20px;
+}
+
+.team-data-wrapper .left img {
+    width: 150px;
+}
+
+.team-data-wrapper h1 {
+    color: #6d6d6d;
+}
+
+.team-data-wrapper .squad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.team-data-wrapper .squad .item h4 {
+    text-align: center;
+    color: #006bb6;
+}
+
+.team-data-wrapper .squad .item {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.team-data-wrapper .squad .item img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.team-data-wrapper .squad .item .node {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.team-data-wrapper .squad .item .node span {
+    font-weight: 600;
+}
